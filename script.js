@@ -5,6 +5,8 @@ const teamMembers = [
     { name: "React.js", role: "Proficient in React.js, skilled at building dynamic user interfaces using component-based architecture, managing state effectively, and optimizing application performance for seamless user experiences." },
     { name: "Bootstrap", role: "Adept at using Bootstrap to design responsive and mobile-first layouts, ensuring consistent styling, rapid UI development, and cross-browser compatibility." },
     { name: "Git", role: "Experienced with Git for version control, proficient in managing code repositories, collaborating on projects, and maintaining clean and organized development workflows." },
+    { name: "Python", role: "Experienced Python full stack developer with strong proficiency in using Git for version control, effectively managing code repositories, collaborating across front-end and back-end development, and maintaining clean, scalable, and well-structured application workflows." },
+    { name: "MySQL", role: "Experienced with MySQL, proficient in designing and managing relational databases, writing optimized queries, handling data efficiently, and ensuring data integrity while supporting scalable back-end development workflows." },
 ];
 
 const cards = document.querySelectorAll(".card");
