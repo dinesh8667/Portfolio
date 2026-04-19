@@ -1,11 +1,25 @@
+body{
+    background: #2C3639;
+}
+
 main {
-    background-color: #2C3639;
     padding: 0px 244px;
+}
+
+#main-div-container{
+    display: flex;
+    justify-content: center;
+    background: #2C3639;
+    position: sticky;
+    top: 5px;
+    z-index: 1000;
 }
 
 .navbar{
     padding: 0px 230px;
     background-color: #dcd7c9;
+    width: 85%;
+    border-radius: 25px;
 }
 
 
