@@ -1,8 +1,30 @@
+const introSection = document.querySelector(".intro");
+
+const introObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+
+        if (entry.isIntersecting) {
+
+            document.querySelectorAll(".nav-link").forEach((item) => {
+                item.classList.remove("active");
+            });
+
+            document
+                .getElementById("home-link")
+                .classList.add("active");
+        }
+
+    });
+}, {
+    threshold: 0.5
+});
+
+introObserver.observe(introSection);
+
+
 
 //about section animation
-const aboutSection = document.querySelector(".about-sec");
-
-const aboutObserver = new IntersectionObserver((entries) => {
+const aboutAnimationObserver = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
 
         if (entry.isIntersecting) {
@@ -19,14 +41,34 @@ const aboutObserver = new IntersectionObserver((entries) => {
                 .getElementById("about-btn")
                 .classList.add("animate-btn");
 
-            aboutObserver.unobserve(entry.target);
+            aboutAnimationObserver.unobserve(entry.target);
         }
     });
 }, {
     threshold: 0.3
 });
 
-aboutObserver.observe(aboutSection);
+aboutAnimationObserver.observe(document.querySelector(".about-sec"));
+
+const aboutNavObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+
+        if (entry.isIntersecting) {
+
+            document.querySelectorAll(".nav-link").forEach((item) => {
+                item.classList.remove("active");
+            });
+
+            document
+                .getElementById("about-link")
+                .classList.add("active");
+        }
+    });
+}, {
+    threshold: 0.5
+});
+
+aboutNavObserver.observe(document.querySelector(".about-sec"));
 
 //services section animation
 const servicesSection = document.querySelector(".services-sec");
@@ -61,6 +103,26 @@ const servicesObserver = new IntersectionObserver((entries) => {
 
 servicesObserver.observe(servicesSection);
 
+const servicesNavObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+
+        if (entry.isIntersecting) {
+
+            document.querySelectorAll(".nav-link").forEach((item) => {
+                item.classList.remove("active");
+            });
+
+            document
+                .getElementById("services-link")
+                .classList.add("active");
+        }
+    });
+}, {
+    threshold: 0.3
+});
+
+servicesNavObserver.observe(servicesSection);
+
 //skills section animation
 const skillsSection = document.querySelector(".skills-details");
 
@@ -76,10 +138,6 @@ const skillsObserver = new IntersectionObserver((entries) => {
             document
                 .getElementById("skills-btn")
                 .classList.add("animate-skills-btn");
-
-            // document
-            //     .getElementById("tech-stack")
-            //     .classList.add("animate-tech-stack");
 
             document
                 .getElementById("skill-1")
@@ -105,6 +163,26 @@ const skillsObserver = new IntersectionObserver((entries) => {
 });
 
 skillsObserver.observe(skillsSection);
+
+const skillsNavObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+
+        if (entry.isIntersecting) {
+
+            document.querySelectorAll(".nav-link").forEach((item) => {
+                item.classList.remove("active");
+            });
+
+            document
+                .getElementById("skills-link")
+                .classList.add("active");
+        }
+    });
+}, {
+    threshold: 0.3
+});
+
+skillsNavObserver.observe(skillsSection);
 
 //portfolio section animation
 const portfolioSection = document.querySelector(".portfolio-sec");
@@ -132,6 +210,26 @@ const portfolioObserver = new IntersectionObserver((entries) => {
 });
 
 portfolioObserver.observe(portfolioSection);
+
+const portfolioNavObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+
+        if (entry.isIntersecting) {
+
+            document.querySelectorAll(".nav-link").forEach((item) => {
+                item.classList.remove("active");
+            });
+
+            document
+                .getElementById("portfolio-link")
+                .classList.add("active");
+        }
+    });
+}, {
+    threshold: 0.3
+});
+
+portfolioNavObserver.observe(portfolioSection);
 
 //contact section animation
 const contactSection = document.querySelector(".contact-sec");

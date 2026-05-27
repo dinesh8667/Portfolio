@@ -1210,10 +1210,19 @@ footer {
     }
 
     .navbar-toggler{
-        width: 40px;
-        height: 40px;
+        width: 30px;
+        height: 30px;
         padding: 0;
         border: none;
+        font-family: navbar-toggler;
+    }
+
+    .navbar-toggler:hover{
+        border: none;
+    }
+
+    .nav-link{
+        text-align: center;
     }
 
     .navbar-toggler>span{
@@ -1386,8 +1395,13 @@ footer {
     }
 
     .skills-details>ul>li {
+        font-size: 14px;
         margin-left: 0;
-        text-align: left;
+        text-align: start;
+    }
+
+    .skills-details>ul>li>i{
+        font-size: 14px;
     }
 
     #skills-btn {
@@ -1441,6 +1455,10 @@ footer {
 
     .footer-menu {
         width: auto;
+    }
+
+    .footer-sec>p{
+        font-size: 9px;
     }
 }
 
@@ -1692,6 +1710,10 @@ footer {
     }
 
     /* ── Hero ── */
+
+    #home{
+        padding: 0px 10px;
+    }
     .hero-intro>h2,
     .hero-intro>h2>span {
         font-size: 28px;
@@ -1710,6 +1732,7 @@ footer {
     }
 
     .hero-intro>h5 {
+        padding: 0;
         font-size: 13px;
     }
 
