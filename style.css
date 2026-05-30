@@ -166,7 +166,7 @@ body {
 
 .intro-img-sec {
     width: 550px;
-    height: 784px;
+    height: 760px;
     display: flex;
     justify-content: center;
 }
@@ -1749,7 +1749,7 @@ footer {
     /* ── About ── */
     .about-img-sec {
         width: 233px;
-        height: 281px;
+        height: 270px;
         position: relative;
     }
 
@@ -1767,7 +1767,7 @@ footer {
     .about-img-2{
         width: 50px;
         height: 50px;
-        top: 240px;
+        top: 230px;
         left: 20px;
     }
 
