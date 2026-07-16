@@ -1857,6 +1857,10 @@ footer {
         margin: 40px 0;
     }
 
+    .project-link-container > h5, .project-link-container > a{
+        font-size: 0.8rem;
+    }
+
     /* ── Contact ── */
     #contact-sec>h2,
     #contact-sec>h2>span {
