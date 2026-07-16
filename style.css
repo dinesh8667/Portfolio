@@ -640,22 +640,52 @@ body {
 }
 
 .portfolio-img>div {
+    position: sticky;
     width: 540px;
     height: auto;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    cursor: pointer;
     transition: 0.4s ease;
 }
 
 .portfolio-img>div>img {
     width: 540px;
     height: auto;
-    border-radius: 5px;
-    margin-top: 0px;
-    margin-bottom: 20px;
     cursor:  pointer;
+    margin-top: 0px;
 }
 
-.portfolio-img>div:hover {
+.project-link-container{
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.621);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.4s ease, visibility 0.4s ease; 
+}
+
+.project-link-container > h5, .project-link-container > a{
+    color: #eab97d;
+    text-align: center;
+    text-decoration: none;
+}
+
+.portfolio-img>div:hover{
     transform: scale(1.02);
+}
+
+.portfolio-img>div:hover .project-link-container{
+    opacity: 1;
+    visibility: visible;
 }
 
 #contact {
